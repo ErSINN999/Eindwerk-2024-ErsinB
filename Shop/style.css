@@ -1,0 +1,93 @@
+*
+{
+    margin: 0;
+    
+}
+
+/*----------------------------------GEMEENSCHAPPELIJKE CODE---------------------------*/
+
+*
+{
+    font-family: sans-serif;
+    margin: 0;
+    scrollbar-width: 1px;
+    
+}
+
+body
+{
+
+}
+
+
+h1#titel
+{
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1#verzending
+{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+
+
+
+
+/*Nav*/
+nav
+{
+
+}
+
+nav ul
+{
+    display: flex;
+    padding: 30px;
+    
+    
+}
+nav ul li 
+{
+    list-style: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+    
+    
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+#nav-rechts
+{
+    float: right;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------HOME PAGINA---------------------------------------*/
+
+
