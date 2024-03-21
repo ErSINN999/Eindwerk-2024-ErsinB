@@ -1,47 +1,21 @@
 *
 {
-    margin: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
     
 }
 
 /*----------------------------------GEMEENSCHAPPELIJKE CODE---------------------------*/
 
-*
-{
-    font-family: sans-serif;
-    margin: 0;
-    scrollbar-width: 1px;
-    
-}
-
-body
-{
-
-}
-
-
-h1#titel
-{
-    text-align: center;
-    color: black;
-    font-size: 60px;
-    background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 h1#verzending
 {
-    padding: 20px;
-    font-size: 20px;
+    padding: 1%;
+    font-size: 100%;
     color: white;
     background-color: black;
     text-align: center;
 }
-
-
-
-
 
 /*Nav*/
 nav
@@ -52,17 +26,28 @@ nav
 nav ul
 {
     display: flex;
-    padding: 30px;
-    
+    padding: 1.5%;
+    text-align: center;
     
 }
 nav ul li 
 {
     list-style: none;
-    margin-left: 30px;
+    
     text-transform: uppercase;
+    font-weight: bold; 
     
-    
+}
+
+nav ul li#nav-links
+{
+    padding-left: 2%;
+}
+
+nav ul li#nav-rechts
+{
+    padding-left: 2%;
+
 }
 
 nav ul li a 
@@ -71,14 +56,81 @@ nav ul li a
     color: black;
 }
 
-#nav-rechts
+#nav-rechts, #nav-links
 {
-    float: right;
+    padding-top: 1%;
+}
 
+a img#logo
+{
+    max-height: 100%;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-right: 500px;
+    display: block;
+}
 
+#shoppingbag, #user
+{
+
+ width: 25px;
+ height: auto;
+ 
+    
 }
 
 
+/*RWD MEDIA SCREEN INSTELLEN */
+@media screen and (max-width: 850px) and (min-width: 600px)
+{
+    nav ul li 
+    {
+        font-size: 15px;
+    }
+
+    img#logo
+    {
+       max-width: 100%;
+        width: 300px;
+    }
+
+    nav ul li#nav-links
+    {
+        padding-left: 2%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    nav ul li 
+    {
+        font-size: 15px;
+    }
+
+    nav ul li#nav-links
+    {
+        display: none;
+    }
+
+    
+
+    nav
+    {
+        width: 100%;
+    }
+
+    img#logo
+    {
+       
+        width: 300px;
+        margin-left: 50%;
+    }
+
+    h1#verzending
+    {
+        font-size: 80%;
+    }
+}
 
 
 
