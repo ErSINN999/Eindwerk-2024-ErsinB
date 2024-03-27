@@ -8,46 +8,63 @@
 
 /*----------------------------------GEMEENSCHAPPELIJKE CODE---------------------------*/
 
+a
+{
+    text-decoration: none;
+}
+
 h1#verzending
 {
     padding: 1%;
-    font-size: 100%;
+    width: 100%;
+    max-width: 100%;
     color: white;
     background-color: black;
     text-align: center;
+    font-size: 100%;
+    
 }
 
-/*Nav*/
+/*------------------------------------------Navigatie*/
 nav
 {
-
+    font-size: 12px;
+    
 }
 
 nav ul
 {
-    display: flex;
-    padding: 1.5%;
+    padding: 1%;
     text-align: center;
-    
+    width: 100%;
+    display: flex;
 }
+
 nav ul li 
 {
     list-style: none;
-    
     text-transform: uppercase;
     font-weight: bold; 
-    
 }
 
-nav ul li#nav-links
+div#main-nav
 {
-    padding-left: 2%;
+    padding: 1%;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
-nav ul li#nav-rechts
+div#nav-rechts
 {
-    padding-left: 2%;
+    padding-left: 30%;
+}
 
+div#nav-links
+{
+    padding-right: 30%;
 }
 
 nav ul li a 
@@ -56,42 +73,71 @@ nav ul li a
     color: black;
 }
 
-#nav-rechts, #nav-links
+div#nav-links ul li
 {
-    padding-top: 1%;
+    padding-left: 15%;
+}
+
+div#nav-rechts ul li
+{
+    padding-left:50%;
 }
 
 a img#logo
 {
     max-height: 100%;
-    margin-left: 30%;
-    margin-right: auto;
-    margin-right: 500px;
     display: block;
+    
+    max-width: 350px;
+
 }
 
 #shoppingbag, #user
 {
 
- width: 25px;
- height: auto;
- 
+    width: 25px;
     
+ 
 }
 
 
+/*--------------------------Home page-----------------------------*/
+div#main-page
+{
+
+}
+
+
+#video
+{
+   width: 100%;
+   position: absolute;
+   z-index: 0;
+
+
+}
+
+#voor-video
+{
+    position: relative;
+    
+    bottom: 70px;
+    left: 0;
+    transform: none;
+    
+}
 /*RWD MEDIA SCREEN INSTELLEN */
 @media screen and (max-width: 850px) and (min-width: 600px)
 {
-    nav ul li 
-    {
-        font-size: 15px;
-    }
 
+    nav
+    {
+        width: 100%;
+    }
     img#logo
     {
        max-width: 100%;
-        width: 300px;
+        
     }
 
     nav ul li#nav-links
@@ -107,12 +153,15 @@ a img#logo
         font-size: 15px;
     }
 
-    nav ul li#nav-links
+    div#nav-links
     {
         display: none;
     }
-
     
+    div#nav-rechts
+    {
+        padding-left: 25%;
+    }
 
     nav
     {
