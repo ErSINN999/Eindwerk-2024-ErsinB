@@ -143,7 +143,6 @@ button#shop-nu
     border: 1px solid;
     transition: all 0.5s ease-in-out;
     letter-spacing: 1px;
-   
 }
 
 
@@ -157,7 +156,7 @@ button#shop-nu:hover
 
 #container-producten
 {
-    color: red;
+    
 }
 
 #geslacht
@@ -206,11 +205,52 @@ button#shop-nu:hover
     padding-top: 70px;
     padding-left: 40px ;
     padding-right: 40px;
-
-
+    width: 100%;
 }
 
+#container-verkoop
+{
+    display: flex;
+    
+}
 
+#p-trend
+{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+div.Product
+{
+    padding-left: 20px;
+    padding-bottom: 400px;
+}
+
+img.Kleed-foto
+{
+    width: 100%;
+    height: 100%;
+}
+
+.img-hover
+{
+   
+}
+
+.product:hover
+{
+ background-color: red;
+}
+
+#main-longpicture1
+{
+    height: 100%;
+    width: 100%;
+    
+}
 
 
 
