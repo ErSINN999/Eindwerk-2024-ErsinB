@@ -63,7 +63,7 @@ div#main-nav
 
 div#nav-rechts
 {
-    padding-left: 25%;
+    
 }
 
 div#nav-links
@@ -156,7 +156,7 @@ button#shop-nu:hover
 
 #container-producten
 {
-    
+    width: 100%;
 }
 
 #geslacht
@@ -164,9 +164,9 @@ button#shop-nu:hover
     padding-top: 5%;
     top: 0;
     height: 100%;
-    width: 100%;
-    margin-left: 40%;
-    margin-right: 50%;
+    padding-left: 44%;
+    
+   
 }
 
 #btn-man, #btn-vrouw
@@ -206,11 +206,13 @@ button#shop-nu:hover
     padding-left: 40px ;
     padding-right: 40px;
     width: 100%;
+    
 }
 
 #container-verkoop
 {
-    display: flex;
+    
+    width: 100%;
     
 }
 
@@ -225,31 +227,77 @@ button#shop-nu:hover
 
 div.Product
 {
-    padding-left: 20px;
-    padding-bottom: 400px;
+    padding: 0 0 100px 24px;
+    margin: 0;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;   
+}
+
+.foto-container
+{
+    
+    position: relative;
+    transition: .3s ease;
 }
 
 img.Kleed-foto
 {
-    width: 100%;
+    
+    top: 0;
+    left: 0;
     height: 100%;
+    width: 100%;
+    max-width: 420px;
+    transition: .5s ease;
 }
 
-.img-hover
+
+
+.hover-pic
 {
-   
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    max-width: 420px;
+    transition: 1s ease;
+    
 }
 
-.product:hover
+.foto-container:hover .hover-pic
 {
- background-color: red;
+    display: inline;
+    transition: 1s;
+    
 }
+
+.brand-name
+{
+    padding-top: 20px;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.prijs
+{
+    padding-top: 5px;
+    color: gray;
+}
+
 
 #main-longpicture1
 {
     height: 100%;
     width: 100%;
     
+}
+
+input[type="radio"]#kleur
+{
+    border-radius: 2px solid;
+    background-color: red;
 }
 
 
