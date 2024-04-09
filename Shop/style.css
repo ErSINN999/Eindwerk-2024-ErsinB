@@ -214,7 +214,8 @@ button#shop-nu:hover
     text-transform: uppercase;
     padding-bottom: 40px;
     font-size: 25px;
-    padding-left: 40px;
+    padding-left: 110px;
+    padding-top: 60px;
 }
 
 
@@ -291,8 +292,6 @@ img.Kleed-foto
     max-width: 20px;
 }
 
-
-
 #main-langfoto1
 {
     height: 100%;
@@ -316,8 +315,9 @@ img.Kleed-foto
         max-height: 580px;
     }
 
+    
 }
-
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1800px) and (min-width: 1735px) 
 {
     img.Kleed-foto , .hover-pic
@@ -326,8 +326,17 @@ img.Kleed-foto
         max-height: 560px;
     }
 
-}
+    .brand-name , .prijs
+    {
+        font-size: 14px;
+    }
 
+    .kleur
+    {
+        max-width: 19px;
+    }
+}
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1720px) and (min-width: 1745px) 
 {
     img.Kleed-foto , .hover-pic
@@ -336,8 +345,18 @@ img.Kleed-foto
         max-height: 540px;
     }
 
-}
+    .brand-name , .prijs
+    {
+        font-size: 13px;
+    }
 
+    .kleur
+    {
+        max-width: 17px;
+    }
+
+}
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1745px) and (min-width: 1665px) 
 {
     img.Kleed-foto , .hover-pic
@@ -346,8 +365,18 @@ img.Kleed-foto
         max-height: 520px;
     }
 
-}
+    .brand-name , .prijs
+    {
+        font-size: 12.5px;
+    }
 
+    .kleur
+    {
+        max-width: 16px;
+    }
+
+}
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1665px) and (min-width: 1580px) 
 {
     img.Kleed-foto , .hover-pic
@@ -356,8 +385,18 @@ img.Kleed-foto
         max-height: 500px;
     }
 
-}
+    .brand-name , .prijs
+    {
+        font-size: 12px;
+    }
 
+    .kleur
+    {
+        max-width: 16px;
+    }
+
+}
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1580px) and (min-width: 1500px) 
 {
     img.Kleed-foto , .hover-pic
@@ -366,9 +405,19 @@ img.Kleed-foto
         max-height: 480px;
     }
 
-}
+    .brand-name , .prijs
+    {
+        font-size: 11.5px;
+    }
 
-@media screen and (max-width: 1500px) and (min-width: 1420px) 
+    .kleur
+    {
+        max-width: 15px;
+    }
+
+}
+/*------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1500px) and (min-width: 1425px) 
 {
     img.Kleed-foto , .hover-pic
     {
@@ -380,10 +429,26 @@ img.Kleed-foto
     {
         padding-left: 10px;
     }
-}
 
-@media screen and (max-width: 1420px) and (min-width: 1080px) 
+    .brand-name , .prijs
+    {
+        font-size: 11px;
+    }
+
+    .kleur
+    {
+        max-width: 15px;
+    }
+}
+/*------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1425px) and (min-width: 1080px) 
 {
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 380px;
+        max-height: 560px;
+    }
+
     #container-verkoop
     {
         padding: 0 0 0 20% ;
@@ -393,7 +458,64 @@ img.Kleed-foto
     {
         padding-left: 10px;
     }
+
+    .brand-name , .prijs
+    {
+        font-size: 14px;
+    }
+
+    .kleur
+    {
+        max-width: 19px;
+    }
+
+    #p-trend
+    {
+        padding-left: 40%;
+        padding-right: 40%;
+        width: 100%;
+    }
+
 }
+
+@media screen and (max-width: 1080px) and (min-width: 900px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 360px;
+        max-height: 540px;
+    }
+    
+}
+
+@media screen and (max-width: 900px) and (min-width: 765px)
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 300px;
+        max-height: 480px;
+    }
+    
+}
+
+@media screen and (max-width: 765px)
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 450px;
+        max-height: 630px;
+    }
+
+    #container-verkoop
+    {
+        padding-left: 0px;
+         
+    }
+    
+  
+
+}
+/*------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 850px) and (min-width: 600px)
 {
@@ -413,7 +535,7 @@ img.Kleed-foto
         padding-left: 2%;
     }
 }
-
+/*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 600px)
 {
     nav ul li 
