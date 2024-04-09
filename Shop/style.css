@@ -6,7 +6,7 @@
     
 }
 
-/*----------------------------------GEMEENSCHAPPELIJKE CODE---------------------------*/
+/*----------------------------------GEMEENSCHAPPELIJKE CODE (Navigatie)---------------------------*/
 #main
 {
     margin: 0;
@@ -101,12 +101,7 @@ a img#logo
 }
 
 
-/*--------------------------Home page-----------------------------*/
-div#main-page
-{
-   
-}
-
+/*--------------------------------------------------Home page-----------------------------*/
 
 #video
 {
@@ -202,16 +197,13 @@ button#shop-nu:hover
 
 #container-producten
 {
-    padding-top: 70px;
-    padding-left: 40px ;
-    padding-right: 40px;
-    width: 100%;
+   
     
 }
 
 #container-verkoop
 {
-    
+    padding-left: 90px;
     width: 100%;
     
 }
@@ -222,15 +214,17 @@ button#shop-nu:hover
     text-transform: uppercase;
     padding-bottom: 40px;
     font-size: 25px;
-    padding-left: 30px;
+    padding-left: 40px;
 }
+
+
+/*-----------------------------------Product-pagina(Producten) ALLES is met CLASS------------*/
 
 div.Product
 {
     padding: 0 0 100px 24px;
     margin: 0;
     display: inline-block;
-    font-size: 1rem;
     text-align: center;   
 }
 
@@ -249,10 +243,10 @@ img.Kleed-foto
     height: 100%;
     width: 100%;
     max-width: 420px;
-    transition: .5s ease;
+    max-height: 600px;
+
+    transition: .3s ease;
 }
-
-
 
 .hover-pic
 {
@@ -260,7 +254,7 @@ img.Kleed-foto
     position: absolute;
     top: 0;
     left: 0;
-    
+    max-height: 600px;
     max-width: 420px;
     transition: 1s ease;
     
@@ -282,29 +276,125 @@ img.Kleed-foto
 
 .prijs
 {
-    padding-top: 5px;
+    padding-top: 10px;
     color: gray;
 }
 
+.kleur-box
+{
+    padding-top: 10px;
+}
 
-#main-longpicture1
+.kleur
+{
+    width: 100%;
+    max-width: 20px;
+}
+
+
+
+#main-langfoto1
 {
     height: 100%;
     width: 100%;
+   
     
 }
 
-input[type="radio"]#kleur
-{
-    border-radius: 2px solid;
-    background-color: red;
-}
+
 
 
 
 
 
 /*RWD MEDIA SCREEN INSTELLEN */
+@media screen and (max-width: 1850px) and (min-width: 1800px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 400px;
+        max-height: 580px;
+    }
+
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1735px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 380px;
+        max-height: 560px;
+    }
+
+}
+
+@media screen and (max-width: 1720px) and (min-width: 1745px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 360px;
+        max-height: 540px;
+    }
+
+}
+
+@media screen and (max-width: 1745px) and (min-width: 1665px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 340px;
+        max-height: 520px;
+    }
+
+}
+
+@media screen and (max-width: 1665px) and (min-width: 1580px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 320px;
+        max-height: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1580px) and (min-width: 1500px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 300px;
+        max-height: 480px;
+    }
+
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1420px) 
+{
+    img.Kleed-foto , .hover-pic
+    {
+        max-width: 290px;
+        max-height: 470px;
+    }
+
+    div.Product
+    {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 1420px) and (min-width: 1080px) 
+{
+    #container-verkoop
+    {
+        padding: 0 0 0 20% ;
+    }
+
+    div.Product
+    {
+        padding-left: 10px;
+    }
+}
+
 @media screen and (max-width: 850px) and (min-width: 600px)
 {
 
