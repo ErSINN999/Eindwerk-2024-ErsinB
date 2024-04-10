@@ -195,11 +195,6 @@ button#shop-nu:hover
     font-weight: 300;
 }
 
-#container-producten
-{
-   
-    
-}
 
 #container-verkoop
 {
@@ -273,14 +268,33 @@ img.Kleed-foto
     padding-top: 20px;
     letter-spacing: 2px;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
-.prijs
+/*------------------------------------------------------Prijs style*/
+.prijs , .prijs-kortring, .originale-prijs-korting
 {
     padding-top: 10px;
+    
+}
+
+.prijs , .originale-prijs-korting
+{
     color: gray;
 }
 
+.originale-prijs-korting
+{
+    text-decoration: line-through;
+}
+
+.korting
+{
+    color: red;
+    padding-left: 10px;
+}
+
+/*----------------------------------------------------Product kleur*/
 .kleur-box
 {
     padding-top: 10px;
@@ -292,21 +306,25 @@ img.Kleed-foto
     max-width: 20px;
 }
 
+
 #main-langfoto1
 {
     height: 100%;
     width: 100%;
-   
-    
+ 
+}
+
+#main-langvideo
+{
+  opacity: 1;
 }
 
 
 
 
 
-
-
 /*RWD MEDIA SCREEN INSTELLEN */
+
 @media screen and (max-width: 1850px) and (min-width: 1800px) 
 {
     img.Kleed-foto , .hover-pic
@@ -471,8 +489,7 @@ img.Kleed-foto
 
     #p-trend
     {
-        padding-left: 40%;
-        padding-right: 40%;
+        padding-left: 21%;
         width: 100%;
     }
 
