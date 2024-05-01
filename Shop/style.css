@@ -27,7 +27,7 @@ h1#verzending
     background-color: black;
     text-align: center;
     font-size: 100%;
-    
+    text-transform: uppercase;
 }
 
 /*------------------------------------------Navigatie---------------------------------*/
@@ -332,23 +332,11 @@ div#main-longpicture1
 {
     height: 100%;
     width: 100%;
-   position: relative;
-   z-index: 0;
 
 }
 
-#container-langfoto
-{
-    
-  
-}
 
-#longpicture-text
-{
-    position: fixed;
-    color: red;
-    z-index: 1;
-}
+
 
 
 
