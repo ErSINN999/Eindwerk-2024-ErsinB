@@ -33,8 +33,7 @@ h1#verzending
 /*------------------------------------------Navigatie---------------------------------*/
 nav
 {
-    font-size: 12px;
-    
+    font-size: 12px; 
 }
 
 nav ul
@@ -69,6 +68,12 @@ div#nav-rechts
 div#nav-links
 {
     padding-right: 35%;
+    overflow: hidden;
+}
+
+div#nav-links .icon
+{
+    display: none;
 }
 
 nav ul li a 
@@ -99,6 +104,14 @@ a img#logo
 {
     width: 25px;
 }
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------Home page-----------------------------*/
@@ -148,7 +161,10 @@ button#shop-nu:hover
     transition: all 0.5s ease-in-out;
 }
 
-
+#alleen-producten
+{
+    background-color: rgba(220, 220, 220, 0.527);
+}
 #container-producten
 {
     width: 100%;
@@ -211,6 +227,7 @@ button#shop-nu:hover
     font-size: 25px;
     padding-left: 110px;
     padding-top: 60px;
+    transition-duration: 0.5s ease-in-out;
 }
 
 
@@ -306,18 +323,34 @@ img.Kleed-foto
     max-width: 20px;
 }
 
+div#main-longpicture1
+{
+    position: relative;
+}
 
 #main-langfoto1
 {
     height: 100%;
     width: 100%;
- 
+   position: relative;
+   z-index: 0;
+
 }
 
-#main-langvideo
+#container-langfoto
 {
-  opacity: 1;
+    
+  
 }
+
+#longpicture-text
+{
+    position: fixed;
+    color: red;
+    z-index: 1;
+}
+
+
 
 
 
@@ -493,6 +526,26 @@ img.Kleed-foto
         width: 100%;
     }
 
+    .nav-links a:not(:first-child) {display: none;}
+    .nav-links a.icon 
+    {
+        float: left;
+        display: block;
+    }
+
+    .nav-links .responsive {position: relative;}
+    .nav-links .responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-links .responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    
 }
 
 @media screen and (max-width: 1080px) and (min-width: 900px) 
