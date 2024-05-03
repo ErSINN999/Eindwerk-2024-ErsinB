@@ -383,6 +383,31 @@ footer
     padding-top: 3%;
 }
 
+#copywrite
+{
+    padding-left: 2%;
+    padding-top: 5%;
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+}
+#volg
+{
+    padding-bottom: 3%;
+}
+#sociaal
+{
+    padding-left: 48%;
+    padding-top: 3%;
+   text-transform: uppercase;
+}
+#social-instagram
+{
+    width: 25px;
+}
+
 
 
 /*RWD MEDIA SCREEN INSTELLEN */
