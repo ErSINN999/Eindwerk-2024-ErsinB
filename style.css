@@ -692,7 +692,7 @@ footer
 
     div#nav-links
     {
-        display: none;
+        display: none
     }
 
     div#nav-rechts
@@ -836,4 +836,5 @@ footer
         max-width: 380px;
         max-height: 630px;
     }
+}
 }
