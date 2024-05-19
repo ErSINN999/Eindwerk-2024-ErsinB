@@ -13,7 +13,7 @@
 
     else
     {
-        $result = $conn->query("SELECT = FROM users WHERE gebruikersnaam='$user'");
+        $result = $conn->query("SELECT * FROM users WHERE gebruikersnaam='$user'");
 
         if($result->num_rows==0)
         {
@@ -28,7 +28,7 @@
             
             else
             {
-                $melding= "Error: " .$sql. "<br>" .$conn->error;
+                $melding= "Error: " . $sql . "<br>" . $conn->error;
             }
         }
 
