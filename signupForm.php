@@ -24,32 +24,35 @@ if (isset($_SESSION["user"]))
     <div class="container">
         <div class="row">
             <h1>Sign Up</h1>
+            <p>Vul onderstaande gegevens in:</p>
         </div>
-        <div class="row">
+        <div class="row" style="margin-left: 30px;">
             <section class="container-fluid">
           
             <section class="row justify-content-center">
-            <section class="col-12 col-sm-8 col-md-6">
+            <section class="col-12 col-sm-8 col-md-6" style="width: 400px; height: 100px;">
                 <form class="form-container" action="signup.php" method="post" autocomplete="off" >                  
-                             
+                      
                     <div class="form-group">
-                        <label for="InputName">Gebruikersnaam</label>
-                        <span class="glyphicon glyphicon-user"></span>
-                        <input type="text" name="username" id="username" required>                                    
+                        <input type="text" name="username" id="username" placeholder="Voornaam" required>                                    
                     </div>
+
                     <div class="form-group">
-                        <label for="InputPassword1">Password</label>
-                        <span class="glyphicon glyphicon-lock"></span>
-                        <input type="password" name="password1" id="password1" required>                                    
+                        <input type="text" name="naam" id="naam" placeholder="Naam" required>                                    
                     </div>
+
                     <div class="form-group">
-                        <label for="InputPassword2">Password (herhaal)</label>
-                        <span class="glyphicon glyphicon-lock"></span>
-                        <input type="password" name="password2" id="password2" required>
-                                    
+                        
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>                                    
                     </div>
+
                     <div class="form-group">
-                     <span class="glyphicon glyphicon-user"></span><input class="btn btn-primary" type="submit" value="SUBMIT" alt='person'>
+                        
+                        <input type="password" name="password1" id="password1" placeholder="Wachtwoord" required>                                    
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="MAAK MIJN ACCOUNT" alt='person'>
                     </div>
                     <div class="form-footer">
                         <p> Heb je al een account? <a href="login.php">Login</a></p>

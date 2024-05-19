@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -35,10 +36,8 @@
             
             <div id="nav-rechts">
                 <ul>
-                    <li><a href="login.php"><?php if ($user!='gast') print 'Welkom '.$user;?><img id="user" src="Fotos/user.png" alt=""></a></li>
-                    <?php if ($user=='gast') print '<li><a href="signupForm.php"><span class="glyphicon glyphicon-user"></span></a></li>';?>
-                    <?php if ($user=='gast') print '<li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>';?>
-                    <li><a href="logout.php"><?php if ($user!='gast') print 'Logout';?></a></li>
+                    <li><a href="login.php"><?php if ($user!='gast') echo"<span style='display: flex; '>$user<span>"?><img id="user" src="Fotos/user.png" alt=""></a></li>
+                    <li><a href="logout.php"><?php if ($user!='gast') echo "<span class='glyphicon glyphicon-log-in'></span>";?></a></li>
                     <li><a href=""><img id="shoppingbag" src="Fotos/shoppingbag.png" alt=""></a></li>
                 </ul>
             </div>

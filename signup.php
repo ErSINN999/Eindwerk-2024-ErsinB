@@ -3,21 +3,17 @@
     $result = 0;
     $user = $_POST['username'];
     $pass1 = $_POST['password1'];
-    $pass2 = $_POST['password2'];
+    $email = $_POST['email'];
+    $naam = $_POST['naam'];
+   
     
-    if ($pass1!=$pass2)
-    {
-        $melding="Beide wachtwoorden zijn niet identiek";
-        header("Location: signupForm.php?melding =$melding");
-    }
 
-    else
-    {
-        $result = $conn->query("SELECT * FROM users WHERE gebruikersnaam='$user'");
+
+    $result = $conn->query("SELECT * FROM users WHERE gebruikersnaam='$user'");
 
         if($result->num_rows==0)
         {
-            $sql = "INSERT INTO users (gebruikersnaam, paswoord) VALUES ('$user', '$pass1')";
+            $sql = "INSERT INTO users (gebruikersnaam, paswoord, Naam, email) VALUES ('$user', '$pass1', '$email', '$naam')";
 
             if($conn ->query($sql) === TRUE)
             {
@@ -38,5 +34,4 @@
         }
         header("Location: signupForm.php?melding=$melding");
         $conn->close();
-    }
 ?>

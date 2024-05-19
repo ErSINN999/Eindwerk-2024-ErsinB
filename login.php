@@ -18,12 +18,14 @@ if (isset($_SESSION["user"]))
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
 </head>
+
 <body>
     <?php
     include_once("header.php");
     ?> 
     <div class="volledige-pagina">
-        <div class="container">
+    <div class="container">
+        
             <div class="row">
                 <h1>LOGIN</h1>
                 <p>Voer je e-mail en wachtwoord in:</p>
@@ -34,19 +36,15 @@ if (isset($_SESSION["user"]))
                 <section class="col-12 col-sm-8 col-md-6" style="width: 400px; height: 100px;">
                     <form class="form-container" action="checklogin.php" method="post" autocomplete="off" >
                     
-                    <div class="form-group">
-                        
-                            
-                            <input type="text" name="username" id="username" placeholder="E-mail" required>                                    
+                        <div class="form-group"> 
+                                <input type="text" name="username" id="username" placeholder="Naam" required>                                    
                         </div>
-                        <div class="form-group">
-                            
-                            
+                        <div class="form-group">   
                             <input type="password" name="password" id="password" required placeholder="Wachtwoord">                                    
                         </div>
-                        <input class="btnbtn-primary"  type="submit" value="LOGIN" alt='person'>
+                            <input class="btnbtn-primary"  type="submit" value="LOGIN" alt='person'>
                         <div class="form-footer">
-                            <p>Heb je nog geen account?<a href="signupForm.php">Sign Up</a></p>
+                            <p>Heb je nog geen account?<a href="signupForm.php">Maak account</a></p>
                             <?php 
                             if (isset($_GET["melding"])){ $melding=$_GET["melding"];}?>
                             <p id="fout"><?php if (isset($_GET["melding"])){print $melding;}?></p>
