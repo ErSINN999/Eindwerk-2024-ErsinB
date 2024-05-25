@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Fotos/PRIMEFIT.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/Fotos/PRIMEFIT.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <title>PrimeFit</title>
@@ -40,8 +41,8 @@
             
             <div id="nav-rechts">
                 <ul>
-                    <li><a href="login.php"><img id="user" src="Fotos/user.png" alt=""></a></li>
-                    <li><a href=""><img id="shoppingbag" src="Fotos/shoppingbag.png" alt=""></a></li>
+                    <li><a href="/login.php"><img id="user" src="/Fotos/user.png" alt=""></a></li>
+                    <li><a href=""><img id="shoppingbag" src="/Fotos/shoppingbag.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -52,9 +53,9 @@
             <div id="position">
                 <div id="margin">
                     <div id="Links-kolom">
-                        <img  id="grote-foto" src="Fotos/Kleding/man/cashmere.jpg" alt="">
                         <img  id="grote-foto" src="Fotos/Kleding/man/cashmere(2).jpg" alt="">
-                        <img class="hover-pic" src="Fotos/Kleding/man/cashmere(2).jpg" alt="">
+                        <img  id="grote-foto" src="/Fotos/Kleding/man/cashmere(2).jpg" alt="">
+                        <img class="hover-pic" src="/Fotos/Kleding/man/cashmere(2).jpg" alt="">
                     </div>
 
                     <div id="Rechts-kolom">
