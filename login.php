@@ -37,7 +37,7 @@ if (isset($_SESSION["user"]))
                     <form class="form-container" action="checklogin.php" method="post" autocomplete="off" >
                     
                         <div class="form-group"> 
-                                <input type="text" name="username" id="username" placeholder="Naam" required>                                    
+                                <input type="text" name="username" id="username" placeholder="E-mail" required>                                    
                         </div>
                         <div class="form-group">   
                             <input type="password" name="password" id="password" required placeholder="Wachtwoord">                                    
