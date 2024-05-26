@@ -1,13 +1,19 @@
 div.container
 {
-    margin-top: 5%;
+    
     width: 433px;
     
 }
 
+
 #main-nav
 {
     padding-top: 30px;
+   
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -35,7 +41,7 @@ input[type=text], input[type=password], input[type=email]
     width: 100%;
 }
 
-h1, .row
+h1#login, .row
 {
     text-align: center;
     width: 463px;
@@ -43,8 +49,10 @@ h1, .row
     padding-bottom: 20px;
 }
 
-h1
+h1#login
 {
     font-size: 20px;
 }
+
+
 

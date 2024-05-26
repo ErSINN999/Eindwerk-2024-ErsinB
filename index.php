@@ -47,6 +47,13 @@
     </nav>
 
     <div id="main-page">
+
+    <?php 
+        include 'connection.php';
+        $sql = "SELECT * FROM `tblproducten`";
+        $result = $conn->query($sql);
+        while($row = $result->fetch_assoc()) {
+    ?>
         <div id="video">
             <video  width="100%" autoplay muted src="Fotos/videohome.mp4"></video>
                 <div id="voor-video">
@@ -82,10 +89,9 @@
 
                 <div class="Product">
                     <div class="foto-container">
-<!--Product box--> <a href="Producten/uglypants.php">
-                            <img class="Kleed-foto" src="Fotos/Kleding/man/cashmere.jpg" alt="">
-                            <img class="hover-pic" src="Fotos/Kleding/man/cashmere(2).jpg" alt="">
-                        </a>
+<!--Product box-->      <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
+                        <img class="hover-pic" src="Fotos/Kleding/man/cashmere(2).jpg" alt=""></a> 
+                        
                     </div>
                     <div>
                         <p class="brand-name">217 UGLY PANTS</p>
@@ -355,7 +361,41 @@
                     </div>
                 </div>   
             </div>
+        
         </div>
+    <?php };
+    $conn->close();?>
+
+<!----------------------------------------------------------------------------------------------------->
+        <div class="Product">
+            <a href="Product.php">
+                <?php 
+                include 'connection.php';
+                $sql = "SELECT * FROM `tblproducten`";
+                $result = $conn->query($sql);
+                while($row = $result->fetch_assoc()) {
+                ?>
+
+                <div class="schoenen">     
+                         
+                    <a href="product.php?id=<?php echo $row['ProductID']?>"><img id="imgSchoenen" alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>"></a> 
+                    <h4><?php echo $row['Productnaam']; ?></h4> 
+                    
+                    <p><b>Kleur: </b><?php echo $row['Kleur']; ?></p>
+                    <a href="Product.php?product=<?php echo $row['kleur']?>"><img id="imgSchoenen" alt="schoenen" src="Fotos/Kleding/kleur/<?php echo $row['kleur']; ?>"></a> 
+                    <p><b>Beschikbaar in volgende maten: </b><?php echo $row['Maat']; ?></p><br>
+                    <p class="prijs"><b>Prijs: </b>€ <?php echo $row['Prijs']; ?></p>
+
+                </div>
+                <?php };
+                $conn->close();?>
+            </a>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
         <footer>
             <div id="footer-container">
                 <div id="positie-logo-footer">

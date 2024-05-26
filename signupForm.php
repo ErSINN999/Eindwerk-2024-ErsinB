@@ -12,6 +12,7 @@ if (isset($_SESSION["user"]))
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Demo SignUp</title>  
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
@@ -34,7 +35,7 @@ if (isset($_SESSION["user"]))
                 <form class="form-container" action="signup.php" method="post" autocomplete="off" >                  
                       
                     <div class="form-group">
-                        <input type="text" name="username" id="username" placeholder="Voornaam" required>                                    
+                        <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required>                                    
                     </div>
 
                     <div class="form-group">
@@ -49,6 +50,11 @@ if (isset($_SESSION["user"]))
                     <div class="form-group">
                         
                         <input type="password" name="password1" id="password1" placeholder="Wachtwoord" required>                                    
+                    </div>
+
+                    <div class="form-group">
+                        
+                        <input type="password" name="password2" id="password2" placeholder="Wachtwoord herhaal" required>                                    
                     </div>
 
                     <div class="form-group">

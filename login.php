@@ -1,5 +1,5 @@
 <?php
-$user="gast";
+$user="Login";
 session_start();
 if (isset($_SESSION["user"]))
 {
@@ -13,7 +13,7 @@ if (isset($_SESSION["user"]))
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Demo Login</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
@@ -27,7 +27,7 @@ if (isset($_SESSION["user"]))
     <div class="container">
         
             <div class="row">
-                <h1>LOGIN</h1>
+                <h1 id="login">LOGIN</h1>
                 <p>Voer je e-mail en wachtwoord in:</p>
             </div>
             <div class="row" style="margin-left: 30px;">
@@ -37,7 +37,7 @@ if (isset($_SESSION["user"]))
                     <form class="form-container" action="checklogin.php" method="post" autocomplete="off" >
                     
                         <div class="form-group"> 
-                                <input type="text" name="username" id="username" placeholder="E-mail" required>                                    
+                                <input type="email" name="email" id="email" placeholder="E-mail" required>                                    
                         </div>
                         <div class="form-group">   
                             <input type="password" name="password" id="password" required placeholder="Wachtwoord">                                    
