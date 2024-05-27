@@ -110,8 +110,8 @@
 <!----------------------------------------------------------------------------------------------------->
                 <div class="Product">
                     <div class="foto-container">
-<!--Product box--> <a href="Product.php">
-                            <img class="Kleed-foto" src="Fotos/Kleding/man/zwart-hoodie(1).jpg" alt="SKYLINE">
+<!--Product box--> 
+                            <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="kleed" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
                             <img class="hover-pic" src="Fotos/Kleding/man/zwart-hoodie(2).jpg" alt="SKYLINE">
                         </a>
                     </div>
