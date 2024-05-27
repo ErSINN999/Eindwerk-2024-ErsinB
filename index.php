@@ -81,10 +81,9 @@
             </div>
 
             
-
+    
             <div id="container-verkoop">
-                
-                
+            
 <!----------------------------------------------------------------------------------------------------->
                 <div class="Product">
                 <?php 
@@ -94,10 +93,10 @@
                 while($row = $result->fetch_assoc()) {
                 ?>
                     <div class="foto-container">
-<!--Product box--> 
-                            <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="kleed" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
-                            <img class="hover-pic" src="Fotos/Kleding/man/zwart-hoodie(2).jpg" alt="SKYLINE">
+  <!--Product box-->        <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="kleed" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
+                            <img class="hover-pic" src="Fotos/Kleding/man/cashmere(2).jpg" alt="SKYLINE">
                         </a>
+                        
                     </div>
                     <div>
                         <p class="brand-name">350 FREEFLOW Zwarte HOODIE</p>
@@ -111,17 +110,25 @@
                         </div>
                     </div>   
                     <?php };
-                $conn->close();?>
+                    $conn->close();?> 
                 </div>
 
+                       
 
-
-                <div class="Product">
+                <div class="Product"> 
+                <?php 
+                include 'connection.php';
+                $sql = "SELECT * FROM `tblproducten`";
+                $result = $conn->query($sql);
+                while($row = $result->fetch_assoc()) {
+                ?>
                     <div class="foto-container">
-<!--Product box--> 
+<!--Product box-->   
                             <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="kleed" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
+                             
                             <img class="hover-pic" src="Fotos/Kleding/man/zwart-hoodie(2).jpg" alt="SKYLINE">
                         </a>
+                        
                     </div>
                     <div>
                         <p class="brand-name">350 FREEFLOW Zwarte HOODIE</p>
@@ -133,7 +140,10 @@
                                 <img class="kleur" src="Fotos/Kleur/donkergroen.png" alt="">
                             </a>
                         </div>
-                    </div>   
+                    </div>  
+                    
+                    <?php };
+                    $conn->close();?> 
                 </div>
 <!----------------------------------------------------------------------------------------------------->
                 <div class="Product">
@@ -176,6 +186,7 @@
                     </div>   
                 </div>     
             </div>
+            
         </div>
 
 <!-------------LANGE FOTO   -->
@@ -401,6 +412,7 @@
                 
             </div>
         </footer>
+        
     </div>
 </div>
 </body>
