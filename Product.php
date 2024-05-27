@@ -29,6 +29,7 @@
     include 'header.php';
     if (isset($_GET['id'])){
         $ProductID = $_GET['id'];
+        print $ProductID;
         include 'connection.php';
         $sql = "SELECT * FROM 'tblproducten' WHERE ProductID = '$ProductID'";
         $result = $conn->query($sql);

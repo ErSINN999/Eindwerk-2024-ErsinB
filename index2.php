@@ -80,104 +80,24 @@
                 Trend Producten
             </div>
 
-            
-
             <div id="container-verkoop">
-                
-                
-<!----------------------------------------------------------------------------------------------------->
-                <div class="Product">
-                <?php 
-                include 'connection.php';
-                $sql = "SELECT * FROM `tblproducten`";
-                $result = $conn->query($sql);
-                while($row = $result->fetch_assoc()) {
-                ?>
-                    <div class="foto-container">
-<!--Product box--> 
-                            <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="kleed" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
-                            <img class="hover-pic" src="Fotos/Kleding/man/zwart-hoodie(2).jpg" alt="SKYLINE">
-                        </a>
-                    </div>
-                    <div>
-                        <p class="brand-name">350 FREEFLOW Zwarte HOODIE</p>
-                        <p class="prijs">€45,00</p>
-
-                        <div class="kleur-box">
-                            <a href="">
-                                <img class="kleur" src="Fotos/Kleur/donkerblauw.png" alt="">
-                                <img class="kleur" src="Fotos/Kleur/donkergroen.png" alt="">
-                            </a>
-                        </div>
-                    </div>   
-                    <?php };
-                $conn->close();?>
-                </div>
-
-
+            <?php 
+        include 'connection.php';
+        $sql = "SELECT * FROM `tblproducten`";
+        $result = $conn->query($sql);
+        while($row = $result->fetch_assoc()) {
+    ?>
 
                 <div class="Product">
                     <div class="foto-container">
-<!--Product box--> 
-                            <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="kleed" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
-                            <img class="hover-pic" src="Fotos/Kleding/man/zwart-hoodie(2).jpg" alt="SKYLINE">
-                        </a>
+                    <?php echo $row['ProductID'];?>
+<!--Product box-->      <a href="product.php?id=<?php echo $row['ProductID']?>"><img class="Kleed-foto" alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
+                        <img class="hover-pic" src="Fotos/Kleding/man/cashmere(2).jpg" alt=""></a> 
+                        
                     </div>
-                    <div>
-                        <p class="brand-name">350 FREEFLOW Zwarte HOODIE</p>
-                        <p class="prijs">€45,00</p>
-
-                        <div class="kleur-box">
-                            <a href="">
-                                <img class="kleur" src="Fotos/Kleur/donkerblauw.png" alt="">
-                                <img class="kleur" src="Fotos/Kleur/donkergroen.png" alt="">
-                            </a>
-                        </div>
-                    </div>   
-                </div>
-<!----------------------------------------------------------------------------------------------------->
-                <div class="Product">
-                    <div class="foto-container">
-<!--Product box-->   <a href="product-pagina">
-                            <img class="Kleed-foto" src="Fotos/Kleding/man/Lah-casa(1).jpg" alt="">
-                            <img class="hover-pic" src="Fotos/Kleding/man/Lah-casa(2).jpeg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <p class="brand-name">510 Lah casa shirt</p>
-                        <p class="prijs">€35,00</p>
-
-                        <div class="kleur-box">
-                            <a href="">
-                                <img class="kleur" src="Fotos/Kleur/donkerblauw.png" alt="">
-                                <img class="kleur" src="Fotos/Kleur/donkergroen.png" alt="">
-                            </a>
-                        </div>
-                    </div>   
-                </div>
-<!----------------------------------------------------------------------------------------------------->
-                <div class="Product">
-                    <div class="foto-container">
-<!--Product box-->   <a href="product-pagina">
-                            <img class="Kleed-foto" src="Fotos/Kleding/man/Jungle-shorts.jpg" alt="">
-                            <img class="hover-pic" src="Fotos/Kleding/man/Lah-casa(2).jpeg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <p class="brand-name">510 Lah casa short</p>
-                        <p class="prijs">€40,00</p>
-
-                        <div class="kleur-box">
-                            <a href="">
-                                <img class="kleur" src="Fotos/Kleur/donkerblauw.png" alt="">
-                                <img class="kleur" src="Fotos/Kleur/donkergroen.png" alt="">
-                            </a>
-                        </div>
-                    </div>   
-                </div>     
-            </div>
-        </div>
-
+        <?php };
+    $conn->close();?>
+          
 <!-------------LANGE FOTO   -->
         <div id="main-longpicture(1)">
             <img id="main-langfoto1" src="Fotos/Kleding/main-longpicture(1).jpeg" alt="">
