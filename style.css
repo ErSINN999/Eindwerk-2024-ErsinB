@@ -339,7 +339,7 @@ div#main-longpicture1
 /*---------------------------------------------Product Kopen*/
 #container-kopen-product
 {
-    
+    background-color: rgba(220, 220, 220, 0.527);
     
 }
 
@@ -347,6 +347,7 @@ div#main-longpicture1
 {
     display: flex;
     margin: 0px 25px 80px 25px;
+    
     
 }
 
@@ -371,24 +372,101 @@ div#main-longpicture1
 
 #Links-kolom
 {
-    width: 70%;
+    width: 60%;
 }
 
 #Rechts-kolom
 {
     padding-left: 10%;
-    width: 30%;
+    width: 40%;
 }
 
-#productenn
+h4#productnaam
 {
-    height: 20cm;
-    width: 100%;
-    margin-top: 20cm;
+    font-size: 18px;
+    padding-bottom: 15px;
 }
 
+#prijs
+{
+    color: gray;
+    padding-bottom: 15px;
+}
 
+#kleur
+{
+    width: 100%;
+    max-width: 30px;
+}
 
+#p-titeltje
+{
+    
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+button#maat
+{
+    background-color: white;
+    width: 60px;
+    margin-top: 3px;
+    
+}
+
+#img1-kleed
+{
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+button#Koopnu
+{
+    background-color: white;
+    text-transform: uppercase;
+}
+
+#radio
+{
+    
+}
+
+.maat-ul
+{
+    display: flex;
+    padding-left: 0px;
+    margin-bottom: 20px;
+}
+
+.maat-li
+{
+    list-style-type: none;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    margin-right: 5px;
+    
+    
+}
+
+li.maat-li
+{
+    text-align: center;
+    padding-right: 10px;
+    align-items: center;
+}
+ul.maat-li li
+{
+    width: 40px;
+}
+
+input#radio
+{
+    width: 40px;
+    margin: 5px;
+    
+}
 /*---------------------------------------------Footer*/
 footer
 {

@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <link rel="shortcut icon" href="Fotos/PRIMEFIT.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
@@ -24,54 +24,68 @@
 <body>
     
 <!-----------------------Navigatie--------------------->
-<div id="productenn">
-    <?php 
-    include 'header.php';
-    if (isset($_GET['id'])){
-        $ProductID = $_GET['id'];
-        print $ProductID;
-        include 'connection.php';
-        $sql = "SELECT * FROM 'tblproducten' WHERE ProductID = '$ProductID'";
-        $result = $conn->query($sql);
-        while($row = $result->fetch_assoc()){
-        ?>       
-            <h4><?php echo $row['Productnaam']; ?></h4>  
-            <h4><?php echo $row['ProductID']; ?></h4>      
-            <img id="imgSchoenen" alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
 
-                
-            <p><b>Kleur: </b><?php echo $row['Kleur']; ?></p>
-            <p><b>Beschikbaar in volgende maten: </b><?php echo $row['Maat']; ?></p><br>
-            <p class="prijs"><b>Prijs: </b>€ <?php echo $row['Prijs']; ?></p>
+    
             
+                
+           
 
+        
+
+    
+<div id="main-pag">
+    <?php 
+        include 'header.php';
+        if (isset($_GET['id'])){
+            $ProductID = $_GET['id'];
+            // print $ProductID;
+            include 'connection.php';
+            $sql = "SELECT * FROM tblproducten WHERE ProductID = '$ProductID'";
+            $result = $conn->query($sql);
+            while($row = $result->fetch_assoc()){
+        ?>       
+    <div id="container-kopen-product" >
+        <div id="position">
+            <div id="margin">
+                <div id="Links-kolom">
+                    <div id="foto-tonen">
+                        <img id="img1-kleed" alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
+                        <img id="img2"  alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding2']; ?>">
+                    </div>  
+                </div>
+                    
+                <div id="Rechts-kolom">
+                    <h4 id="productnaam"><?php echo $row['Productnaam']; ?></h4> 
+                    <p id="prijs">€ <?php echo $row['Prijs']; ?>.00</p>
+                    <hr>
+                    <p id="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
+                    <a href="#img2 ">
+                        
+                        <img id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur2']; ?>">
+                    </a>
+
+                    <p id="p-titeltje">Maat:</p><br>
+                    <ul class="maat-ul">
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                    </ul>
+                      
+                    
+
+                    <button id="Koopnu">Koop nu</button>
+                </div>
+            </div>
+        </div>
         <?php 
         };
-        $conn->close();}
-
-    ?>
-        <!-- <div id="main-page">
-            <div id="container-kopen-product">
-                <div id="position">
-                    <div id="margin">
-                        <div id="Links-kolom">
-                            
-                        </div>
-
-                        <div id="Rechts-kolom">
-                            
-                           
-                            
-                            
-                            <button>Koop nu</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+        $conn->close();}?>
+    </div> 
 
       
 
-</div>
 
     <footer>
         <div id="footer-container">
