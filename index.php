@@ -24,7 +24,9 @@
 <!-----------------------Navigatie--------------------->
 
 <div id="main">
-    <h1 id="verzending">Gratis verzending vanaf €50</h1>
+    <?php 
+    include 'header.php';?>
+    <!-- <h1 id="verzending">Gratis verzending vanaf €50</h1>
     <nav class="navbar" >
         <div id="main-nav">
             <div id="nav-links">
@@ -40,11 +42,11 @@
             <div id="nav-rechts">
                 <ul>
                     <li><a href="login.php"><img id="user" src="Fotos/user.png" alt=""></a></li>
-                    <li><a href=""><img id="shoppingbag" src="Fotos/shoppingbag.png" alt=""></a></li>
+                    <li><a href="winkelmandje.php"><img id="shoppingbag" src="Fotos/shoppingbag.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <div id="main-page">
 

@@ -18,14 +18,26 @@ div.container
 
 
 
-button, html input[type=button], input[type=reset], input[type=submit] {
-    width: 100%;
+button, html input[type=button], input[type=reset] {
+    
     background-color: black;
     height: 40px;
     margin-bottom: 20px;
+    
 }
 
-input[type=button]:hover
+input[type=submit]
+{
+    background-color: black;
+    height: 40px;
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+    border:black 1 ;
+    margin-top: 20px;
+    
+}
+input[type=submit]:hover
 {
 background-color: white;
 color: black;
@@ -53,6 +65,8 @@ h1#login
 {
     font-size: 20px;
 }
+
+
 
 
 

@@ -36,6 +36,7 @@
 <div id="main-pag">
     <?php 
         include 'header.php';
+        
         if (isset($_GET['id'])){
             $ProductID = $_GET['id'];
             // print $ProductID;
@@ -64,9 +65,9 @@
                         <img id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur2']; ?>">
                     </a>
 
-                    <p id="p-titeltje">Maat:</p><br>
+                    <p id="p-titeltje">Maat:</p>
                     <ul class="maat-ul">
-                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <label for=""><?php echo $row['Maat']; ?></label> </li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
@@ -75,7 +76,7 @@
                       
                     
 
-                    <button id="Koopnu">Koop nu</button>
+                    <a href="winkelmandje.php"><button id="Koopnu">Koop nu</button></a>
                 </div>
             </div>
         </div>

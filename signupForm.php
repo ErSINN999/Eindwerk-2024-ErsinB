@@ -1,11 +1,3 @@
-<?php
-$user="Login";
-session_start();
-if (isset($_SESSION["user"]))
-{
-   $user=$_SESSION["user"];
-}
-?>
 <!doctype html>
 <html lang="nl">
   <head>

@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    
+    transition: all 0.5s ease-in-out;
 }
 
 /*----------------------------------GEMEENSCHAPPELIJKE CODE (Navigatie)---------------------------*/
@@ -48,7 +48,7 @@ h1#verzending
     width: 100%;
 }
 
-/*------------------------------------------Navigatie---------------------------------*/
+/*------------------------------------------Navigatie(header.php)---------------------------------*/
 nav
 {
     font-size: 12px; 
@@ -123,6 +123,12 @@ a img#logo
 {
     width: 25px;
 }
+
+li#gast, li#log-out, li#winkelmandje
+{
+    width: 100%;
+}
+
 
 
 /*--------------------------------------------------Home page-----------------------------*/
@@ -403,8 +409,9 @@ h4#productnaam
 {
     
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-top: 20px;
+    color: #747272;
 }
 
 button#maat
@@ -425,12 +432,9 @@ button#Koopnu
 {
     background-color: white;
     text-transform: uppercase;
+    width: 100%;
 }
 
-#radio
-{
-    
-}
 
 .maat-ul
 {
@@ -455,10 +459,19 @@ li.maat-li
     text-align: center;
     padding-right: 10px;
     align-items: center;
+    background-color: white;
 }
+
+li.maat-li:hover
+{
+    background-color: black;
+    color: white;
+}
+
 ul.maat-li li
 {
     width: 40px;
+    
 }
 
 input#radio
@@ -466,7 +479,35 @@ input#radio
     width: 40px;
     margin: 5px;
     
+    
 }
+
+#Koopnu
+{
+    background-color: white;
+    color: black;
+    margin-top: 40px;
+}
+
+#Koopnu:hover
+{
+    background-color: black;
+    color: white;
+}
+
+/* --------------------------------------------Winkelmandje */
+#boodschaap
+{
+    padding-top: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-right: 10px;
+}
+
+
+
+
+
 /*---------------------------------------------Footer*/
 footer
 {
@@ -475,10 +516,7 @@ footer
 
 }
 
-#footer-container
-{
-    
-}
+
 #positie-logo-footer
 {
     padding-top: 9%;
@@ -736,19 +774,6 @@ footer
         width: 100%;
     }
 
-    .nav-links a:not(:first-child) {display: none;}
-    .nav-links a.icon 
-    {
-        float: left;
-        display: block;
-    }
-
-    .nav-links .responsive {position: relative;}
-    .nav-links .responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
     .nav-links .responsive a {
       float: none;
       display: block;
@@ -758,6 +783,11 @@ footer
     div#nav-rechts
     {
         padding-left: 28%;
+    }
+
+    #nav-ul
+    {
+        padding-right: 40px;
     }
 
     
@@ -965,6 +995,16 @@ footer
     {
         max-width: 380px;
         max-height: 630px;
+    }
+
+    #shoppingbag, #user
+    {
+        width: 15px;
+    }
+
+    #username
+    {
+        font-size: 10px;
     }
 }
 }
