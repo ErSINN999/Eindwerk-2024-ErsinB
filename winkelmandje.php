@@ -37,6 +37,8 @@
         <?php
         if ($user!="Login")
          {
+            print $klantID;
+ 
             $sql = "SELECT * FROM tblwinkelmandje WHERE klantID='$klantID'";
             $totaal = 0;
             $result = $conn->query($sql);
