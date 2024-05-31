@@ -34,6 +34,7 @@
 
         <h3 id="boodschaap">WINKELMANDJE </h3><?php echo $user; ?>
         
+       
         <?php
         if ($user!="Gast")
          {
