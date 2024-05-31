@@ -37,7 +37,7 @@
         <?php
         if ($user!="Gast")
          {
-            print $klantID;
+            
  
             $sql = "SELECT * FROM tblwinkelmandje WHERE klantID='$klantID'";
             $totaal = 0;
@@ -46,17 +46,27 @@
             {
                 $product = $row['ProductID'];
                 echo "Product: " . $row['ProductID'];
-                $sql2 = "SELECT * FROM tblproducten WHERE id='$product'";
+                
+                $sql2 = "SELECT * FROM tblproducten WHERE ProductID='$product'";
                 $result2 = $conn->query($sql2);
                 while ($row2 = $result2->fetch_assoc()) { ?>
-                <?php echo $row2['Productnaam']; ?>
-                <img id="imgSchoenen" alt="schoenen" src="fotos/kleding/man<?php echo $row2['afbeelding'];?>">
+
+                <div class="Product">
+                    <div class="foto-container">
+                        <img id="kleed-winkel" alt="kleed" src="fotos/kleding/man/<?php echo $row2['afbeelding'];?>">
+                    </div>
+                    <p id="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
+                    <p class="brand-name"><?php print $row2['Productnaam'];?></p>
+                    <p class="prijs">€<?php print $row2['Prijs'];?>,00</p>
+                </div>
+
                 
-                <b>Kleur: </b><?php echo $row2['Kleur']; ?>
+                <p id="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
                 <b>Prijs: </b>€ <?php echo $row2['Prijs']; ?>
                 <?php $totaal = $row2['Prijs']; ?>
                 <b>Aantal: </b><?php echo $row['aantal']; ?>
                 <a href="deleteWinkelmandje.php?productID=<?php echo $row['ProductID']; ?>">Verwijder</a>
+                <br>
                 <?php }
             }
             $conn->close(); ?>
@@ -65,7 +75,7 @@
             
             <h4>Totale prijs: <?php echo $totaal; ?> euro</h4>
             <?php if ($totaal > 0) { ?>
-                <button onclick="location.href='orderverwerken.php'">Koop</button>
+                <button onclick="location.href=''">Koop</button>
             <?php } }
             else{
                 print"<span id='boodschaap'> Je moet eerst inloggen om een winkelmandje te gerbuiken.</span>";

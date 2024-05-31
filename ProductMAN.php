@@ -68,7 +68,7 @@
 
                     <p id="p-titeltje">Maat:</p>
                     <ul class="maat-ul">
-                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <label for=""><?php echo $row['Maat']; ?></label> </li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="S"> <?php echo $row['Maat2']; ?></li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="M"> <?php echo $row['Maat3']; ?></li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="L"> <?php echo $row['Maat4']; ?></li>
@@ -77,7 +77,7 @@
                       
                     
 
-                    <a href="winkelmandje.php"><button id="Koopnu">Koop nu</button></a>
+                    <a href="winkelmandje.php?ProductID=<?php print $ProductID;?>"><button id="Koopnu">Koop nu</button></a>
                 </div>
             </div>
         </div>
