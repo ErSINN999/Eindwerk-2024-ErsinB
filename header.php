@@ -36,9 +36,9 @@
             <!--  -->
             <div id="nav-rechts">
                 <ul id="nav-ul">
-                    <li id="gast"><a href="login.php"><img id="user" src="Fotos/user.png" alt=""><?php if ($user!='Login') print $user;?></a></li>
+                    <li id="gast"><a href="login.php"><img id="user" src="Fotos/user.png" alt=""><?php if ($user!='Gast') print $user;?></a></li>
                     <li id="log-out"><a href="logout.php">
-                        <?php if ($user!='Login') print '<img id="user" src="Fotos/logout.png" alt="" >';?>
+                        <?php if ($user!='Gast') print '<img id="user" src="Fotos/logout.png" alt="" >';?>
                     </a></li>
                     <li id="winkelmandje"><a href="winkelmandje.php"><img id="shoppingbag" src="Fotos/shoppingbag.png" alt="" ></a></li>
                     

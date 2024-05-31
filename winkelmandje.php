@@ -13,7 +13,7 @@
             
         
         <?php
-        if ($user!="Login") {
+        if ($user!="Gast") {
            
             if (isset($_GET["productID"])) 
             {
@@ -35,7 +35,7 @@
         <h3 id="boodschaap">WINKELMANDJE </h3><?php echo $user; ?>
         
         <?php
-        if ($user!="Login")
+        if ($user!="Gast")
          {
             print $klantID;
  
