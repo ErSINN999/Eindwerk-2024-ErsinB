@@ -281,7 +281,7 @@ img.Kleed-foto
     
 }
 
-.foto-container:hover .hover-pic
+#hover-container:hover .hover-pic
 {
     display: inline;
     transition: 1s;
@@ -342,6 +342,7 @@ div#main-longpicture1
     width: 100%;
 
 }
+
 /*---------------------------------------------Product Kopen*/
 #container-kopen-product
 {

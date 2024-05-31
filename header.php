@@ -26,8 +26,8 @@
         <div id="main-nav">
             <div id="nav-links">
                 <ul>
-                    <li><a href="Man.html">man</a></li>
-                    <li><a href="vrouw.html">vrouw</a></li>
+                    <li><a href="Man.php">man</a></li>
+                    <li><a href="vrouw.php">vrouw</a></li>
                     <li><a href="Accessoires.html">Accessoires</a></li>
                 </ul>
             </div>

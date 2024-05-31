@@ -15,13 +15,13 @@
         <?php
         if ($user!="Gast") {
            
-            if (isset($_GET["productID"])) 
+            if (isset($_GET["ProductID"])) 
             {
-                $product = $_GET['productID'];
+                $product = $_GET['ProductID'];
                 $aantal+=1;
                 print $klantID;
                 
-                $sql = "INSERT INTO tblwinkelmandje (`ID`, `klantID`, `productID`, `aantal`) VALUES (NULL, '$klantID', '$product', '$aantal')";
+                $sql = "INSERT INTO tblwinkelmandje (`ID`, `klantID`, `ProductID`, `aantal`) VALUES (NULL, '$klantID', '$product', '$aantal')";
                 if ($conn->query($sql) === TRUE) {
                     $melding = "Product is toegevoegd";
                     header("location: winkelmandje.php?melding=$melding");
@@ -44,19 +44,19 @@
             $result = $conn->query($sql);
             while ($row = $result->fetch_assoc()) 
             {
-                $product = $row['productID'];
-                echo "Product: " . $row['productID'];
+                $product = $row['ProductID'];
+                echo "Product: " . $row['ProductID'];
                 $sql2 = "SELECT * FROM tblproducten WHERE id='$product'";
                 $result2 = $conn->query($sql2);
                 while ($row2 = $result2->fetch_assoc()) { ?>
-                <?php echo $row2['productnaam']; ?>
+                <?php echo $row2['Productnaam']; ?>
                 <img id="imgSchoenen" alt="schoenen" src="fotos/kleding/man<?php echo $row2['afbeelding'];?>">
                 
-                <b>Kleur: </b><?php echo $row2['kleur']; ?>
-                <b>Prijs: </b>€ <?php echo $row2['prijs']; ?>
-                <?php $totaal = $row2['prijs']; ?>
+                <b>Kleur: </b><?php echo $row2['Kleur']; ?>
+                <b>Prijs: </b>€ <?php echo $row2['Prijs']; ?>
+                <?php $totaal = $row2['Prijs']; ?>
                 <b>Aantal: </b><?php echo $row['aantal']; ?>
-                <a href="deleteWinkelmandje.php?productID=<?php echo $row['productID']; ?>">Verwijder</a>
+                <a href="deleteWinkelmandje.php?productID=<?php echo $row['ProductID']; ?>">Verwijder</a>
                 <?php }
             }
             $conn->close(); ?>

@@ -50,12 +50,13 @@
             <div id="margin">
                 <div id="Links-kolom">
                     <div id="foto-tonen">
-                        <img id="img1-kleed" alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding']; ?>">
-                        <img id="img2"  alt="schoenen" src="Fotos/Kleding/man/<?php echo $row['afbeelding2']; ?>">
+                        <img id="img1-kleed" alt="kleed" src="Fotos/Kleding/vrouw/<?php echo $row['afbeelding']; ?>">
+                        <img id="img2"  alt="kleed" src="Fotos/Kleding/vrouw/<?php echo $row['afbeelding2']; ?>">
                     </div>  
                 </div>
                     
                 <div id="Rechts-kolom">
+                    <h4 id="productid"><?php echo $row['ProductID']; ?></h4> 
                     <h4 id="productnaam"><?php echo $row['Productnaam']; ?></h4> 
                     <p id="prijs">€ <?php echo $row['Prijs']; ?>.00</p>
                     <hr>
@@ -68,10 +69,10 @@
                     <p id="p-titeltje">Maat:</p>
                     <ul class="maat-ul">
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <label for=""><?php echo $row['Maat']; ?></label> </li>
-                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
-                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
-                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
-                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="S"> <?php echo $row['Maat2']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="M"> <?php echo $row['Maat3']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="L"> <?php echo $row['Maat4']; ?></li>
+                        <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XL"> <?php echo $row['Maat5']; ?></li>
                     </ul>
                       
                     
