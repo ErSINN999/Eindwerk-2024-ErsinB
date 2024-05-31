@@ -269,6 +269,11 @@ img.Kleed-foto
     transition: .3s ease;
 }
 
+p.voorraad
+{
+    padding-top: 20px;
+    background-color: red;
+}
 .hover-pic
 {
     display: none;

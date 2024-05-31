@@ -28,7 +28,7 @@
                 <ul>
                     <li><a href="Man.php">man</a></li>
                     <li><a href="vrouw.php">vrouw</a></li>
-                    <li><a href="Accessoires.html">Accessoires</a></li>
+                    <li><a href="Accessoires.php">Accessoires</a></li>
                 </ul>
             </div>
 
