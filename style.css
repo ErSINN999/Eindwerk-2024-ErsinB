@@ -265,15 +265,13 @@ img.Kleed-foto
     width: 100%;
     max-width: 42main0px;
     max-height: 600px;
-
+    z-index: 0;
     transition: .3s ease;
+    position: relative;
 }
 
-p.voorraad
-{
-    padding-top: 20px;
-    background-color: red;
-}
+
+
 .hover-pic
 {
     display: none;
@@ -286,11 +284,27 @@ p.voorraad
     
 }
 
-#hover-container:hover .hover-pic
+p.voorraad
+{
+    padding-top: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 16px;
+    border: black 1px solid;
+    padding: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
+    background-color: white;
+}
+
+.foto-container:hover .hover-pic, .foto-container:hover p.voorraad
 {
     display: inline;
     transition: 1s;
-    
+    background-color: black;
+    color: white;
 }
 
 .brand-name
@@ -411,7 +425,7 @@ h4#productnaam
     max-width: 30px;
 }
 
-#p-titeltje
+.p-titeltje
 {
     
     font-size: 15px;
@@ -488,38 +502,145 @@ input#radio
     
 }
 
-#Koopnu
+#Koopnu, #del
 {
     background-color: white;
     color: black;
     margin-top: 40px;
 }
 
-#Koopnu:hover
+#Koopnu:hover , #del:hover
 {
     background-color: black;
     color: white;
 }
 
 /* --------------------------------------------Winkelmandje */
+#container-winkelmandje
+{
+    background-color: rgba(220, 220, 220, 0.527);
+   
+}
 #boodschaap
 {
     padding-top: 40px;
-    text-align: center;
-    letter-spacing: 2px;
+    padding-left: 20px;
+    letter-spacing: 1px;
     padding-right: 10px;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 #kleed-winkel
 {
-    max-width: 400px;
+    max-width: 100px;
+    padding-top: 10px;
+    
    
 }
+.product-winkelmandje
+{
+    display: flex;
+    margin-left: 60px;
+   
+    margin: 2% 0px 2% 12%;
+    align-items: center;
 
+}
+#display-flex-winkel
+{
+    
+}
+#position-id
+{
+    padding-right: 5px;
+   
+    width: 7%;
+}
+#position-brandname
+{
+    padding-left: 20px;
+    width: 25%;
+    text-align: center;
+}
 
+#position-kleur
+{
+    padding-left: 50px;
+    width: 10%;
+}
 
+#position-maat
+{
+    width: 5%;
+    text-align: center;
+    padding-left: 3px;
+}
+#position-prijs
+{
+    padding-left: 3cm;
+    width: 10%;
+}
+#position-aantal
+{
+    padding-left: 2cm;
+    width: 8%;
+    text-align: center;
+}
 
+#verwijderen
+{
+    width: 20px;
+}
+
+#position-verwijderen
+{
+    padding-left: 2cm;
+}
+
+#totaal-kopen
+{
+    font-size: 25px;
+    width: 30%;
+    margin-left: 34%;
+    text-align: center;
+    margin-top: 6%;
+}
+
+/*---------------------------------------------Add page*/
+.container-add
+{
+    width: 100%;
+    background-color: rgba(220, 220, 220, 0.527);
+}
+.add, .container-add-producten
+{
+    margin: 2% 0 5% 2%;
+    padding-top: 30px;
+}
+.h2
+{
+    padding-bottom: 20px;
+}
+#Kleed-foto-add
+{
+    width: 300px;
+}
+#naam-add, #kleur-add, #prijs-add, #afbeelding-add
+{
+    width: 300px;
+}
+
+#del
+{
+    width: 100px;
+    margin-left: 50px;
+}
+
+#foto-tr
+{
+    padding-bottom: 5cm;
+}
 
 /*---------------------------------------------Footer*/
 footer

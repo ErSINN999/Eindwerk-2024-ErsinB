@@ -9,7 +9,7 @@
 <body>
     <?php include "header.php"; ?>
     <div class="producten">
-        <div id="container-kopen-product">
+        <div id="container-winkelmandje">
             
         
         <?php
@@ -32,9 +32,9 @@
         }
         ?>
 
-        <h3 id="boodschaap">WINKELMANDJE </h3><?php echo $user; ?>
+        <h3 id="boodschaap">WINKELMANDJE  <?php echo $user; ?></h3>
         
-       
+       <div id="display-flex-winkel">
         <?php
         if ($user!="Gast")
          {
@@ -46,38 +46,47 @@
             while ($row = $result->fetch_assoc()) 
             {
                 $product = $row['ProductID'];
-                echo "Product: " . $row['ProductID'];
+                
+                
                 
                 $sql2 = "SELECT * FROM tblproducten WHERE ProductID='$product'";
                 $result2 = $conn->query($sql2);
                 while ($row2 = $result2->fetch_assoc()) { ?>
 
-                <div class="Product">
+                <div class="product-winkelmandje">
+                    <p id="position-id"><?php echo "Product: " . $row['ProductID']; ?></p>
                     <div class="foto-container">
                         <img id="kleed-winkel" alt="kleed" src="fotos/kleding/man/<?php echo $row2['afbeelding'];?>">
+                        <!-- <img id="kleed-winkel" alt="kleed" src="fotos/kleding/vrouw/<?php //echo $row2['afbeelding'];?>"> -->
                     </div>
-                    <p id="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
-                    <p class="brand-name"><?php print $row2['Productnaam'];?></p>
-                    <p class="prijs">€<?php print $row2['Prijs'];?>,00</p>
-                </div>
+                    <p id="position-brandname" class="brand-name"><?php print $row2['Productnaam'];?></p>
+                    <p id="position-maat" class="maat"><?php print $row2['Maat'];?></p>
+                    <p id="position-kleur"></p><img  id="kleur"  alt="Kleur" src="Fotos/kleur/<?php echo $row2['Kleur']; ?>">
+                    
+                    <p id="position-prijs" class="prijs">€<?php print $row2['Prijs'];?>,00</p>
+                
 
                 
-                <p id="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
-                <b>Prijs: </b>€ <?php echo $row2['Prijs']; ?>
-                <?php $totaal = $row2['Prijs']; ?>
-                <b>Aantal: </b><?php echo $row['aantal']; ?>
-                <a href="deleteWinkelmandje.php?productID=<?php echo $row['ProductID']; ?>">Verwijder</a>
-                <br>
+                
+                <?php $totaal += $row2['Prijs']; ?>
+                <p id="position-aantal"><b>Aantal: </b><?php echo $row['aantal']; ?></p>
+                <p id="position-verwijderen"><a href="delete.php?ProductID=<?php echo $row['ProductID']; ?>"><img id="verwijderen" src="fotos/verwijderen.png" alt=""></a></p>
+                
+                </div>
+                <hr>
                 <?php }
             }
             $conn->close(); ?>
-            <p>Totaal: € <?php echo $totaal; ?></p>
 
+            </div>
+            <div id="totaal-kopen">
+            <h4 id="totaal">TOTAAL: €<?php echo $totaal; ?></h4>
             
-            <h4>Totale prijs: <?php echo $totaal; ?> euro</h4>
             <?php if ($totaal > 0) { ?>
-                <button onclick="location.href=''">Koop</button>
-            <?php } }
+                <a><button id="Koopnu">Koop nu</button></a>
+                </div>
+            <?php } 
+            }
             else{
                 print"<span id='boodschaap'> Je moet eerst inloggen om een winkelmandje te gerbuiken.</span>";
             }

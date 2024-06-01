@@ -60,13 +60,13 @@
                     <h4 id="productnaam"><?php echo $row['Productnaam']; ?></h4> 
                     <p id="prijs">€ <?php echo $row['Prijs']; ?>.00</p>
                     <hr>
-                    <p id="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
+                    <p class="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
                     <a href="#img2 ">
                         
                         <img id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur2']; ?>">
                     </a>
 
-                    <p id="p-titeltje">Maat:</p>
+                    <p class="p-titeltje">Maat:</p>
                     <ul class="maat-ul">
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="XS"> <?php echo $row['Maat']; ?></li>
                         <li class="maat-li" ><input id="radio" type="radio" name="maat" id="S"> <?php echo $row['Maat2']; ?></li>
