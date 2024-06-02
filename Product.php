@@ -1,4 +1,4 @@
-
+<!-- 
 <!-- //post welk id -->
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +24,7 @@
 <body>
     
 <!-----------------------Navigatie--------------------->
-<div id="productenn">
+<!-- <div id="productenn">
     <?php 
     include 'header.php';
     if (isset($_GET['ID'])){
@@ -47,7 +47,7 @@
 
         <?php 
         };
-        $conn->close();}
+        $conn->close();} -->
 
     ?>
 
@@ -81,4 +81,4 @@
     </div>
 </div>
 </body>
-</html>
+</html> -->

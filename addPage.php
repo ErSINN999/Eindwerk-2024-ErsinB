@@ -52,6 +52,8 @@ include 'header.php'
 
     <div class="container-add-producten">
     <h2>Producten</h2>
+
+    <!-- Man ik moet appart ze selecteren anders krijg ik fouten! -->
         <table id="producten">
             
             <?php
@@ -78,11 +80,13 @@ include 'header.php'
                 $conn->close();
             ?>
             
+
+            <!-- Vrouw -->
         </table>
         <table id="producten">
             <?php
             include 'connection.php';
-            $sql = "SELECT * FROM tblproducten WHERE ProductID IN(9,10,11,12)";
+            $sql = "SELECT * FROM tblproducten WHERE ProductID IN(9,10,11,12,13)";
             $result = $conn->query($sql);
             while($row = $result->fetch_assoc()) {
                 ?>
@@ -94,7 +98,7 @@ include 'header.php'
                     <td><img id="Kleed-foto-add" src="fotos/kleding/vrouw/<?php echo $row['afbeelding'];?>" ></td>
                     <td><img id="Kleed-foto-add" src="fotos/kleding/vrouw/<?php echo $row['afbeelding2'];?>" ></td>   
                                     
-                    <td><button id="del" onclick="location.href='del.php?id=<?php echo $row['id']?>'">DELETE</button></td>
+                    <td><button id="del" onclick="location.href='delete.php?id=<?php echo $row['id']?>'">DELETE</button></td>
                 </tr>
                 
             <?php

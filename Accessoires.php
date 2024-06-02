@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <link rel="shortcut icon" href="Fotos/PRIMEFIT.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>PrimeFit</title>
@@ -42,7 +42,7 @@
                             </div>
 
                                 <p class="brand-name"><?php print $row['Productnaam'];?></p>
-                                <p class="prijs">€<?php print $row['Prijs'];?></p>
+                                <p class="prijs">€<?php print $row['Prijs'];?>.00</p>
                                 
                                 
                                 <div class="kleur-box">
@@ -57,5 +57,6 @@
         </div>
     </div>
 </div>
+<?php include 'footer.php';?>
 </body>
 </html>

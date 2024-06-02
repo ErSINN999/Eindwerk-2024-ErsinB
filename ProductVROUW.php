@@ -24,15 +24,6 @@
 <body>
     
 <!-----------------------Navigatie--------------------->
-
-    
-            
-                
-           
-
-        
-
-    
 <div id="main-pag">
     <?php 
         include 'header.php';
@@ -77,7 +68,7 @@
                       
                     
 
-                    <a href="winkelmandje.php"><button id="Koopnu">Koop nu</button></a>
+                    <a href="winkelmandje.php?ProductID=<?php print $ProductID;?>"><button id="Koopnu">Koop nu</button></a>
                 </div>
             </div>
         </div>
@@ -89,31 +80,7 @@
       
 
 
-    <footer>
-        <div id="footer-container">
-            <div id="positie-logo-footer">
-                <img id="footer-logo" src="Fotos/PRIMEFIT(wit).png" alt="">
-            </div>
-
-            <div id="positie-paginas">
-                <ul id="footer-ul">
-                    <a href="Home.html"><li>Home</li></a>
-                    <a href="Man.html"><li>Man</li></a>
-                    <a href="Vrouw.html"><li>Vrouw</li></a>
-                    <a href="accesoires.html"><li>Accessoires</li></a>
-                </ul>
-            </div>
-
-            <div id="sociaal">
-                <p id="volg">Volg ons</p>
-                <a href="https://www.instagram.com/officiallyersin/"><img id="social-instagram" src="Fotos/instagram.svg"></i></a> <!--INSTA ERSIN-->
-            </div>
-
-            <p id="copywrite">PRIMEFIT - ERSIN B. © 2023</p>
-            <i class="bi bi-instagram"></i>
-            
-        </div>
-    </footer>
+    <?php include 'footer.php';?>
     </div>
 </div>
 </body>
