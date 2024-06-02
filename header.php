@@ -8,6 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("main-nav");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
 <style>
     h1#verzending
     {
@@ -30,13 +41,25 @@
                     <li><a href="vrouw.php">vrouw</a></li>
                     <li><a href="Accessoires.php">Accessoires</a></li>
                 </ul>
+                <div id="hamburger">
+
+                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <img src="fotos/hamburgermenu.png" alt="" width="auto" height="40px">
+                        <!-- <i class="fa fa-bars"></i> ALTERNATIEF -->
+
+                    </a>
+                </div>
             </div>
 
             <a href="index.php"><img id="logo" src="Fotos/PRIMEFIT(wit).png" alt="PRIMEFIT"></a>
             <!--  -->
             <div id="nav-rechts">
                 <ul id="nav-ul">
-                    <li id="add"><a href="addPage.php"><img id="user" src="fotos/add.png" alt=""></a></li>
+                    <!--Als je ingelogd ben met deze email kan je product toevoegen alleen als admin -->
+                    <?php if ($user == 'admin@gmail.com') { ?>
+                        <li id="add"><a href="addPage.php"><img id="user" src="fotos/add.png" alt=""></a></li>
+                    <?php } ?>
+
                     <li id="gast"><a href="login.php"><img id="user" src="Fotos/user.png" alt=""><?php if ($user!='Gast') print $user;?></a></li>
                     <li id="log-out"><a href="logout.php">
                         <?php if ($user!='Gast') print '<img id="user" src="Fotos/logout.png" alt="" >';?>
@@ -48,6 +71,8 @@
                 </ul>
             </div>
         </div>
+        
+        
     </nav>
 
     </body>

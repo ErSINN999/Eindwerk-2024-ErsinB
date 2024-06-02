@@ -58,7 +58,7 @@
                 <div id="Rechts-kolom">
                     <h4 id="productid"><?php echo $row['ProductID']; ?></h4> 
                     <h4 id="productnaam"><?php echo $row['Productnaam']; ?></h4> 
-                    <p id="prijs">€ <?php echo $row['Prijs']; ?>.00</p>
+                    <p id="prijs">€ <?php echo $row['Prijs']; ?>,00</p>
                     <hr>
                     <p class="p-titeltje">Kleuren:</p><img  id="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
                     <a href="#img2 ">

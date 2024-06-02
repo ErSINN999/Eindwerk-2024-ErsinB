@@ -42,7 +42,7 @@
                             </div>
 
                                 <p class="brand-name"><?php print $row['Productnaam'];?></p>
-                                <p class="prijs">€<?php print $row['Prijs'];?>.00</p>
+                                <p class="prijs">€<?php print $row['Prijs'];?>,00</p>
                                 
                                 
                                 <div class="kleur-box">

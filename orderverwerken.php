@@ -12,7 +12,7 @@
             $aantal=$row['aantal'];
             date_default_timezone_set("Europe/Brussels");
             $datum=date("Y-m-d");
-            $sqlInsert="INSERT INTO tblbestelling (BestellingID, Datum, klantID, ProductID, aantal) VALUES (NULL, '$datum', '$klantID', '$Product', '$aantal')";
+            $sqlInsert="INSERT INTO bestelling (BestellingID, Datum, klantID, ProductID, aantal) VALUES (NULL, '$datum', '$klantID', '$product', '$aantal')";
         }
 
         if($conn->query($sqlInsert) ===TRUE)

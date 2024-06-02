@@ -31,7 +31,7 @@
                                 
     <!--Product box-->          <a href="productvrouw.php?id=<?php echo $row['ProductID']?>">
                                     <img class="Kleed-foto" alt="echo $row['afbeelding'];" src="Fotos/Kleding/vrouw/<?php echo $row['afbeelding']; ?>">
-                                    
+                                    <p class="voorraad"><?php print $row['Voorraad'];?></p>
                                     <?php if ($row['afbeelding2']<>"")
                                     {?>
                                     <img class="hover-pic" alt="echo $row['afbeelding2'];" src="Fotos/Kleding/vrouw/<?php echo $row['afbeelding2']; ?>">
@@ -42,7 +42,7 @@
 
                                 <p class="brand-name"><?php print $row['Productnaam'];?></p>
                                 <p class="prijs">€<?php print $row['Prijs'];?>,00</p>
-                                <p>Op voorraad? <?php print $row['Voorraad'];?></p>
+                                
                                 <div class="kleur-box">
                                         <img class="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur']; ?>">
                                         <img class="kleur"  alt="Kleuren" src="Fotos/kleur/<?php echo $row['Kleur2']; ?>">                                   

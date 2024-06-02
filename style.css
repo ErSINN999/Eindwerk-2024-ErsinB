@@ -134,7 +134,10 @@ li#gast, li#log-out, li#winkelmandje
 }
 
 
-
+#hamburger
+{
+    display: none;
+}
 /*--------------------------------------------------Home page-----------------------------*/
 
 #video
@@ -572,6 +575,7 @@ input#radio
 {
     padding-left: 50px;
     width: 10%;
+    max-width: 100%;
 }
 
 #position-maat
@@ -652,6 +656,11 @@ footer
     height: 300px;
     background-color: white;
 
+}
+
+#footer-container
+{
+    display: flex;
 }
 
 #footer-elementen
@@ -738,6 +747,7 @@ footer
 #footer-foto
 {
     width: 40%;
+    margin-top: 3%;
 }
 .footer-foto
 {
@@ -909,7 +919,10 @@ footer
 /*------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1425px) and (min-width: 1080px) 
 {
-   
+    div#nav-rechts
+    {
+        padding: 0;
+    }
     img.Kleed-foto , .hover-pic
     {
         max-width: 380px;
@@ -948,14 +961,31 @@ footer
       text-align: left;
     }
 
-    div#nav-rechts
-    {
-        padding-left: 28%;
-    }
-
     #nav-ul
     {
         padding-right: 40px;
+    }
+
+    #positie-logo-footer
+    {
+    padding: 2%; 
+    width: 30%;
+    }
+
+    #positie-paginas
+    {
+        display: inline-block;
+        padding: 2%;
+        width: 30%;
+        padding-left: 6%;
+    }
+    #sociaal
+    {
+        
+    text-transform: uppercase;
+    padding: 2%;
+    padding-left: 5%;
+    width: 30%;
     }
 
     
@@ -972,8 +1002,25 @@ footer
     
     div#nav-rechts
     {
-        padding-left: 20%;
+        padding-left: 0;
     }
+
+    #footer-elementen
+    {
+        display: block;
+    }
+
+
+    
+    #positie-paginas
+    {   
+        width: 50%; 
+    }
+    #sociaal
+    {
+      width: 50%;  
+    }
+
     
 }
 
@@ -989,6 +1036,21 @@ footer
         padding-left: 17%;
     }
     
+    #footer-elementen
+    {
+        display: block;
+    }
+
+
+    
+    #positie-paginas
+    {   
+        width: 50%; 
+    }
+    #sociaal
+    {
+      width: 50%;  
+    }
 }
 
 @media screen and (max-width: 765px) 
@@ -1004,7 +1066,21 @@ footer
         padding-left: 20%;
     }
 
+    #footer-elementen
+    {
+        display: block;
+    }
+
+
     
+    #positie-paginas
+    {   
+        width: 50%; 
+    }
+    #sociaal
+    {
+      width: 50%;  
+    }
     
   
 
@@ -1058,6 +1134,21 @@ footer
         padding-left: 35%;
     }
 
+    #footer-elementen
+    {
+        display: block;
+    }
+
+
+    
+    #positie-paginas
+    {   
+        width: 50%; 
+    }
+    #sociaal
+    {
+      width: 50%;  
+    }
     
 }
 /*------------------------------------------------------------------------------------*/
@@ -1068,11 +1159,57 @@ footer
         font-size: 15px;
     }
 
+    #hamburger
+    {
+        display: block;
+    }
     div#nav-links
+    {
+        overflow: hidden;
+    background-color: rgb(36, 36, 106);
+    position: relative;
+    }
+
+    #nav-links #hamburger
     {
         display: none;
     }
+    #nav-links ul li a
+    {
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+    #nav-links ul li a :hover
+    {
+        background-color: #ddd;
+        color: black;
+    }
+    #nav-links a.icon:hover
+    {
+        background-color: rgb(36, 36, 106);
+        color: black;
+    }
+
+    #nav-links a.icon
+    {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin:0;
+        padding:0; 
+    }
     
+    #nav-links
+    {
+        overflow: hidden;
+        
+        position: relative;
+    }
+
     div#nav-rechts
     {
         padding-left: 25%;
@@ -1124,6 +1261,45 @@ footer
         
     }
 
+    #footer-elementen
+    {
+        display: block;
+    }
+
+    #positie-paginas
+    {   
+        width: 50%; 
+    }
+    #sociaal
+    {
+      width: 50%;  
+    }
+
+    .product-winkelmandje
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+       margin: 0;
+    }
+    #position-id, #position-maat, #position-brandname, #position-kleur, #position-prijs, #position-aantal, #position-verwijderen
+    {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    #position-verwijderen
+    {
+       
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #kleed-winkel
+    {
+        max-width: 390px;
+    }
+}
 @media screen and (max-width: 500px)
 {
     #container-verkoop
@@ -1174,5 +1350,20 @@ footer
     {
         font-size: 10px;
     }
-}
+
+    #footer-elementen
+    {
+        display: block;
+    }
+
+
+    
+    #positie-paginas
+    {   
+        width: 50%; 
+    }
+    #sociaal
+    {
+      width: 50%;  
+    }
 }

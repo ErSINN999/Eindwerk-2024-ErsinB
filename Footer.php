@@ -20,13 +20,13 @@
                     <p id="titel-footer">Volg ons</p>
                     <a href="https://www.instagram.com/officiallyersin/"><img id="social-instagram" src="Fotos/instagram.png"></i></a> <!--INSTA ERSIN-->
                 </div>
+                
+            </div>
 
-                <div id="footer-foto">
+            <div id="footer-foto">
                     <img class="footer-foto" src="fotos/team.png" alt="">
                 </div>
-            </div>
-            <p id="copywrite">PRIMEFIT - ERSIN B. © 2023</p>
-            <i class="bi bi-instagram"></i>
-            
         </div>
+
+        <p id="copywrite">PRIMEFIT - ERSIN B. © 2023</p>
     </footer>
