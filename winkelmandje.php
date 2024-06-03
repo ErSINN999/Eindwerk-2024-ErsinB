@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Fotos/PRIMEFIT.png" type="image/x-icon">
     <title>Winkelmandje</title>
 </head>
 <body>
@@ -94,7 +95,7 @@
             <h4 id="totaal">TOTAAL: €<?php echo $totaal; ?></h4>
 
             <?php if ($totaal > 0) { ?>
-                <button id="Koopnu" onclick="location.href='orderverwerken.php'">Koop nu</button>
+                <button id="Koopnu" onclick="location.href='orderverwerken.php'">Koop nu</button> 
             <?php } }
             else{
                 print"<p id='boodschaap'> Je moet eerst inloggen om een winkelmandje te gerbuiken.</p>";

@@ -16,7 +16,7 @@
         while ($row= $result -> fetch_assoc()){
             $_SESSION["user"]=$row['email'];
             $_SESSION["ID"]=$row['ID'];
-            header("Location: login.php?melding=Je bent aangemeld");
+            header("Location: index.php?melding=Je bent aangemeld");
         }
        
         
